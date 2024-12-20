@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          body {
+            margin: 0;
+            font-family: "Montserrat", sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100%;
+        }
+
+        .first {
+            text-align: center;
+            background-color:  #F3E5C9;
+            padding: 8px;
+            border-radius: 6px;
+            margin: 10px;
+            width: 1450px;
+            color: #5D4B3E;
+        }
+        .image-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        img {
+            width: 2000px;
+            max-width: 1500px;
+            height: 600px;
+            object-fit: cover;
+            margin: 11px;
+            border-radius: 10px;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1470px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            z-index: 10;
+        }
+
+        .logo a {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #967969;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #967969;
+            font-weight: 500;
+        }
+
+        .nav-links li a:hover {
+            color: #5D4B3E;
+        }
+
+        .c a {
+            text-decoration: none;
+            background-color: #967969;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 0.9;
+        }
+
+        .c a:hover {
+            background-color: #5D4B3E;
+        }
+
+
+
+
+
+      
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1400px; 
+    height: 700px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.left-section {
+    position: relative;
+    width: 55%;
+    background-color: #eaeaea;
+}
+
+.left-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+.right-section {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f6f2;
+    padding: 50px;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.form-box h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #888;
+}
+
+
+.register-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg,#5D4B3E, #967969);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition:0.3s ease, transform 0.2s ease;
+}
+
+.register-btn:hover {
+    background: linear-gradient(135deg, #5D4B3E, #967969);
+    transform: translateY(-2px);
+}
+
+
+p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.sign-in-link {
+    color: #967969;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sign-in-link:hover {
+    text-decoration: underline;
+}
+
+
+.footer {
+  background-color: #f9f8f7;
+  color: #967969;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-logo h1 {
+  font-size: 80px;
+  color: #967969;
+  margin: 0;
+  font-weight: bold;
+}
+
+.footer-signup {
+  max-width: 300px;
+}
+
+.footer-signup p {
+  margin: 10px 0;
+}
+
+.signup-form {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.signup-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup-form button {
+  padding: 10px 20px;
+  background-color: #5D4B3E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #967969;
+}
+
+.privacy {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.privacy a {
+  color: #967969;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-links h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #967969;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+  color: #967969;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="first">
+        FREE EU SHIPPING ON ORDERS OVER €70
+    </div>
+
+    <div class="image-container">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">rhode</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="futures.html">Futures</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            <div class="c">
+                <a href="sign.html">Sign In</a>
+            </div>
+        </nav>
+
+
+        <div class="container">
+            <!-- Left Section: Image and Text -->
+            <div class="left-section">
+                <img src="images/RHODE 170124 18082-SHOT-1-5-048-049_v1_LR_sRGB_L.webp" alt="Skincare Image">
+                <div class="overlay-text">
+                    <h1>It’s time to invest in your <strong>SKIN.</strong></h1>
+                </div>
+            </div>
+    
+            <!-- Right Section: Create Account Form -->
+            <div class="right-section">
+                <div class="form-box">
+                    <h2>Create Account</h2>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" placeholder="First Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="register-btn">REGISTER</button>
+                    </form>
+                    <p>Already have an account? <a href="sign.html" class="sign-in-link">Sign in!</a></p>
+                </div>
+            </div>
+        </div>
+
+
+        
+      <div class="footer">
+        <div class="footer-main">
+          <div class="footer-logo">
+            <h1>rhode</h1>
+          </div>
+          <div class="footer-signup">
+            <p>Join us on the rhode to an effortless glow.</p>
+            <p>Glaze your inbox with tips, tricks & exclusive content from Hailey.</p>
+            <form class="signup-form">
+              <input type="email" placeholder="Email Address" />
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+            <p class="privacy">By signing up, you agree to our <a href="#">Privacy Policy</a>*.</p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <h4>NAVIGATE</h4>
+              <ul>
+                <li><a href="#">Shopping</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Rhode Futures</a></li>
+                <li><a href="#">Impact</a></li>
+                <li><a href="#">VLOG</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>SOCIAL</h4>
+              <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">TikTok</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>OFFICIAL</h4>
+              <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>SUPPORT</h4>
+              <ul>
+                <li>We’re here M-F 9am - 5pm PST.</li>
+                <li>Email: <a href="mailto:hello@rhodeskin.com">hello@rhodeskin.com</a></li>
+                <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© rhode 2024</p>
+        </div>
+      </div>
+      
+
+</body>
+</html>

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        background-color: #f9f9f9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100%;
+    }
+
+    .first {
+            text-align: center;
+            background-color:  #F3E5C9;
+            padding: 8px;
+            border-radius: 6px;
+            margin: 10px;
+            width: 1450px;
+            color: #5D4B3E;
+        }
+      
+
+    .image-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    img {
+        width: 2000px;
+        max-width: 1500px;
+        height: 600px;
+        object-fit: cover;
+        margin: 11px;
+        border-radius: 10px;
+    }
+
+    .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1470px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            z-index: 10;
+        }
+
+        .logo a {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #967969;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #967969;
+            font-weight: 500;
+        }
+
+        .nav-links li a:hover {
+            color: #5D4B3E;
+        }
+
+        .c a {
+            text-decoration: none;
+            background-color: #967969;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 0.9;
+        }
+
+        .c a:hover {
+            background-color: #5D4B3E;
+        }
+
+
+
+    .split-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f0; 
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.split-image {
+  flex: 1;
+}
+
+.split-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.split-text {
+  flex: 1;
+  padding: 40px;
+  background-color: #f4f4f0; 
+}
+.split-text h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.split-text p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.split-text .footnote {
+  font-size: 0.9em;
+  color: #777;
+}
+
+
+ 
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 2rem 0;
+            color: #444;
+        }
+
+        .pillar-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+
+ .pillar {
+            background-color: #D2B48C;
+            color: #fff;
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            width: 23%; 
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            min-height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .pillar h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-transform: capitalize;
+        }
+
+        .pillar p {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        
+        @media (max-width: 768px) {
+            .pillar {
+                width: 45%;
+                min-height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .pillar {
+                width: 90%; 
+                min-height: 280px;
+            }
+        }
+
+
+
+
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.8;
+}
+
+.container {
+    display: flex;
+    max-width: 1400px; 
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.image-section {
+    flex: 1;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.text-section {
+    flex: 1;
+    padding: 60px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-section h1 {
+    color: #333;
+    font-size: 40px; 
+    margin-bottom: 30px;
+}
+
+.text-section p {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+.footer {
+  background-color: #f9f8f7;
+  color: #967969;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-logo h1 {
+  font-size: 80px;
+  color: #967969;
+  margin: 0;
+  font-weight: bold;
+}
+
+.footer-signup {
+  max-width: 300px;
+}
+
+.footer-signup p {
+  margin: 10px 0;
+}
+
+.signup-form {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.signup-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup-form button {
+  padding: 10px 20px;
+  background-color: #5D4B3E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #967969;
+}
+
+.privacy {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.privacy a {
+  color: #967969;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-links h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #967969;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+  color: #967969;
+}
+
+</style>
+<body>
+    <div class="first">
+        FREE EU SHIPPING ON ORDERS OVER €70
+    </div>
+
+    <div class="image-container">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">rhode</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="futures.html">Futures</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            <div class="c">
+                <a href="sign.html">Sign In</a>
+            </div>
+        </nav>
+        
+
+        <div class="split-section">
+            <div class="split-image">
+              <img src="images/rhodeskin.webp" alt="Rhode Product Image">
+            </div>
+            <div class="split-text">
+              <h2>rhode futures foundation</h2>
+              <p>
+                From day one, rhode pledged a minimum of 1% of sales and ongoing team efforts to support organizations actively dismantling the barriers that impede women* in their careers and limit their access to healthcare, while helping them in pursuing their long-term goals. RFF partners with organizations that prioritize empowering women, especially those from marginalized communities, providing them with the essential resources to chart their own paths forward.
+              </p>
+              <p class="footnote">
+                *For all women, including non-binary, trans, non-cis, and all women-identified persons.
+              </p>
+            </div>
+          </div>
+          
+
+
+          <section class="pillars">
+            <h1>our pillars</h1>
+            <div class="pillar-container">
+                <div class="pillar">
+                    <h2>care for women</h2>
+                    <p>Give women access to a wide variety of health services for full autonomy over their bodies to make empowered choices.</p>
+                </div>
+                <div class="pillar">
+                    <h2>support for moms</h2>
+                    <p>Invest in resources for moms, mother-like figures, and caregivers that alleviate financial stress as they raise and support their families.</p>
+                </div>
+                <div class="pillar">
+                    <h2>women in business</h2>
+                    <p>Provide access to capital and coaching for women and non-binary-owned businesses.</p>
+                </div>
+                <div class="pillar">
+                    <h2>emergency response</h2>
+                    <p>Support organizations on the frontlines in times of crisis or urgent need, especially when women are disproportionately impacted.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="container">
+            <div class="image-section">
+                <img src="images/Kindred-Single-mother-Stocksy-3935596-9933de3af4ec48b1ac42276d0e5eb8f2.jpg" alt="Family" />
+            </div>
+            <div class="text-section">
+                <h1>LIFT Family Goal Fund</h1>
+                <p>
+                    LIFT is a national non-profit that invests in low-income families 
+                    to break generational cycles of poverty and promotes wellbeing, 
+                    social connection, and financial stability. LIFT strengthens families 
+                    by providing cash buffers to parents (mostly moms) so they can work 
+                    toward long-term success. With LIFT’s support, mothers reinvest 
+                    in their careers, further their goals, and provide a better future 
+                    for themselves and their families—regardless of race, ethnicity, or 
+                    zip code.
+                </p>
+              
+            </div>
+        </div>
+
+
+        
+      <div class="footer">
+        <div class="footer-main">
+          <div class="footer-logo">
+            <h1>rhode</h1>
+          </div>
+          <div class="footer-signup">
+            <p>Join us on the rhode to an effortless glow.</p>
+            <p>Glaze your inbox with tips, tricks & exclusive content from Hailey.</p>
+            <form class="signup-form">
+              <input type="email" placeholder="Email Address" />
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+            <p class="privacy">By signing up, you agree to our <a href="#">Privacy Policy</a>*.</p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <h4>NAVIGATE</h4>
+              <ul>
+                <li><a href="#">Shopping</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Rhode Futures</a></li>
+                <li><a href="#">Impact</a></li>
+                <li><a href="#">VLOG</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>SOCIAL</h4>
+              <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">TikTok</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>OFFICIAL</h4>
+              <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>SUPPORT</h4>
+              <ul>
+                <li>We’re here M-F 9am - 5pm PST.</li>
+                <li>Email: <a href="mailto:hello@rhodeskin.com">hello@rhodeskin.com</a></li>
+                <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© rhode 2024</p>
+        </div>
+      </div>
+      
+
+</body>
+</html>
